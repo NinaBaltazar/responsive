@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Covered+By+Your+Grace&family=Homemade+Apple&family=Maven+Pro:wght@500&family=Poppins&family=VT323&display=swap'); 
+/* Global View aka Desktop View */
+
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Asap', sans-serif;
+}
+body{
+    margin:0;
+    background-color: #ebebeb;
+
+}
+ 
+.highlight{
+    font-weight: 700;
+}
+.container {
+   
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 150px;
+    
+}
+
+
+
+header{
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+} 
+
+
+.logo p{
+     display: inline-block;
+     font-size: 1rem;
+     font-family: 'Asap', sans-serif;
+     color: white;
+     padding-top: 9px;
+
+}
+
+ 
+.header-container{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(60, 60, 60);
+    min-height: 90px;
+    margin-bottom: 40px;
+}
+
+.col {
+  
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(43, 226, 147);
+} 
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p{
+    font-family: 'Asap', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 0.975rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+.col p::first-line{
+    font-weight: bold;
+}
+
+.mybutton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+
+
+
+.col .mobile{
+    font-family: 'Asap', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 0.975rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.hide-desktop-only {
+    display: none;
+   font-family:'Asap', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 0.975rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.footer-container{
+ 
+    max-width: 1380px;
+    background-color: rgb(60, 60, 60);
+    
+
+   
+}
+
+footer{
+    display: fixed;
+    min-height: 200px;
+    max-width: 1200px;
+    margin: 0 auto; /*para centralizar*/
+    background-color: blueviolet;
+}
+
+
+
+/* Tablet View */
+@media (max-width: 768px){
+    
+.col {
+    width: 45%;
+}
+
+.hide-desktop-only {
+    display: block;
+}
+
+
+.col {
+    width: 45%;
+}
+
+.hide-desktop-only {
+    display: block;
+}
+
+header {
+    display: block;
+    text-align: center;
+}
+.header-container {
+    position: relative;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+nav a {
+    display: block;
+   }
+
+.logo {
+    padding: 40px 0; 
+}
+
+.mybutton {
+    margin-left: 0;
+}
+
+
+}
+
+
+
+/*mobile view*/ 
+@media (max-width: 400px){
+
+    .col{
+        width: 100%;
+    } 
+
+    .mobile{
+        display: none;
+    } 
+
+
+    .hide-desktop-only {
+        display: block;
+    }
+    
+    header {
+        display: block;
+        text-align: center;
+    }
+    .header-container {
+        position: relative;
+    }
+    
+    .container {
+        padding-top: 6px;
+    }
+    
+    nav a {
+        display: block;
+       }
+    
+    .logo {
+        padding: 40px 0; 
+    }
+    
+    .mybutton {
+        margin-left: 0;
+        
+    }
+    
+
+
+
+}
